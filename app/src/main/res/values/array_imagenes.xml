@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="imagenes1">
+
+        <item>@drawable/mileycirus</item>
+        <item>@drawable/jenniferlawrence</item>
+        <item>@drawable/rihana</item>
+        <item>@drawable/sashagrey</item>
+    </array>
+
+    <array name="imagenes2">
+        <item>@drawable/kamerondiaz</item>
+        <item>@drawable/beyonce</item>
+        <item>@drawable/katyperry</item>
+        <item>@drawable/mckaylamaroney</item>
+    </array>
+
+    <array name="imagenes3">
+        <item>@drawable/arianagrande</item>
+        <item>@drawable/kateupton</item>
+        <item>@drawable/brookeadams</item>
+        <item>@drawable/parishilton</item>
+    </array>
+</resources>
