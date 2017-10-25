@@ -44,10 +44,6 @@ public class Principal extends AppCompatActivity {
         short numNivel = b.getShort("NIVEL");
 
         switch (numNivel) {
-            case 1:
-                imgs = getResources().obtainTypedArray(R.array.imagenes1);
-                resps = getResources().obtainTypedArray(R.array.respuestas1);
-                break;
             case 2:
                 imgs = getResources().obtainTypedArray(R.array.imagenes2);
                 resps = getResources().obtainTypedArray(R.array.respuestas2);
@@ -55,6 +51,10 @@ public class Principal extends AppCompatActivity {
             case 3:
                 imgs = getResources().obtainTypedArray(R.array.imagenes3);
                 resps = getResources().obtainTypedArray(R.array.respuestas3);
+                break;
+            default:
+                imgs = getResources().obtainTypedArray(R.array.imagenes1);
+                resps = getResources().obtainTypedArray(R.array.respuestas1);
                 break;
         }
 
