@@ -14,9 +14,17 @@
     <string name="categoria3">Manda cojones</string>
     <string name="fin">CONGRATULATIONS FUCKING PERVERT!!!!</string>
     <string name="copyright">\u00A9 2017 DAM Engine V2. All rights reserved.</string>
-    <string name="nivelBloqueado">Aún no has desbloqueado este nivel</string>
+    <string name="nivelBloqueado">Aún no has desbloqueado este nivel\nConsigue perfect en el anterior</string>
 
     <string name="tick">&#10004;</string>
+
+
+    <!-- Fin Partida -->
+    <string name="textoFin">Se ha acabado el tiempo</string>
+    <plurals name="resultado">
+        <item quantity="one">Has acabado!!! \nHas conseguido %d puntito</item>
+        <item quantity="other">Has acabado!!! \nHas conseguido %d puntitos</item>
+    </plurals>
 
     <!-- Respuestas -->
     <string-array name="respuestas1">

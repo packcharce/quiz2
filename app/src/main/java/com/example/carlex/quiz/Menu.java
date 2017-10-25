@@ -94,6 +94,7 @@ public class Menu extends AppCompatActivity {
             intent.putExtra("NIVEL", 2);
             startActivityForResult(intent, NIVEL2);
         } else {
+            tv1.setTextSize(20);
             tv1.setText(getResources().getString(R.string.nivelBloqueado));
         }
     }
@@ -104,6 +105,7 @@ public class Menu extends AppCompatActivity {
             intent.putExtra("NIVEL", 3);
             startActivityForResult(intent, NIVEL3);
         } else {
+            tv1.setTextSize(20);
             tv1.setText(getResources().getString(R.string.nivelBloqueado));
         }
     }
@@ -119,6 +121,7 @@ public class Menu extends AppCompatActivity {
         if (requestCode == NIVEL1) {
             if (resultCode == Activity.RESULT_OK) {
                 resultadoNivel1 = 1;
+                //TODO
                 opcion1.setText(opcion1.getText() + "\t" + getResources().getString(R.string.tick));
             } else {
                 resultadoNivel1 = 0;
@@ -127,6 +130,7 @@ public class Menu extends AppCompatActivity {
         if (requestCode == NIVEL2) {
             if (resultCode == Activity.RESULT_OK) {
                 resultadoNivel2 = 1;
+                //TODO
                 opcion2.setText(opcion2.getText() + "\t" + getResources().getString(R.string.tick));
             } else {
                 resultadoNivel2 = 0;
@@ -135,7 +139,6 @@ public class Menu extends AppCompatActivity {
         if (requestCode == NIVEL3) {
             if (resultCode == Activity.RESULT_OK) {
                 resultadoNivel3 = 1;
-                //TODO
                 opcion3.setText(opcion3.getText() + "\t" + getResources().getString(R.string.tick));
                 tv1.setText(getResources().getString(R.string.fin));
             } else {

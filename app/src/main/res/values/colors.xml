@@ -3,7 +3,7 @@
     <color name="colorPrimary">#3f51b5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#9999cc</color>
-    <color name="radioBoton">#00FF00</color>
+    <color name="radioBoton">#8f5cff</color>
     <color name="radioBoton2">#4db6ac</color>
     <color name="background_material_light">#336699</color>
     <color name="statusBar">#003366</color>

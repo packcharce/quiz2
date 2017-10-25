@@ -216,9 +216,9 @@ public class Principal extends AppCompatActivity {
      **/
     private void fin(int tipoFin) {
         if (tipoFin == 0)
-            tv.setText("Se ha acabado el tiempo");
+            tv.setText(getResources().getString(R.string.textoFin));
         else
-            tv.setText("Has acabado!!! \nGanas " + puntos + " puntos");
+            tv.setText(getResources().getQuantityString(R.plurals.resultado, puntos, puntos));
         rg.setVisibility(View.INVISIBLE);
         imagen.setVisibility(View.INVISIBLE);
         pb.setVisibility(View.INVISIBLE);
