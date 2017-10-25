@@ -22,6 +22,7 @@
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@android:string/dialog_alert_title"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/maxresdefault" />
     </FrameLayout>
@@ -83,5 +84,18 @@
             android:text="@string/categoria3" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/copyright"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

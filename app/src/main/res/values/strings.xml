@@ -13,8 +13,10 @@
     <string name="categoria2">Pervertido</string>
     <string name="categoria3">Manda cojones</string>
     <string name="fin">CONGRATULATIONS FUCKING PERVERT!!!!</string>
-
+    <string name="copyright">\u00A9 2017 DAM Engine V2. All rights reserved.</string>
     <string name="nivelBloqueado">Aún no has desbloqueado este nivel</string>
+
+    <string name="tick">&#10004;</string>
 
     <!-- Respuestas -->
     <string-array name="respuestas1">

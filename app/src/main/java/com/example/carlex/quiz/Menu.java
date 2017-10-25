@@ -120,7 +120,8 @@ public class Menu extends AppCompatActivity {
         if (requestCode == NIVEL1) {
             if (resultCode == Activity.RESULT_OK) {
                 resultadoNivel1 = 1;
-                opcion1.setBackgroundColor(Color.GREEN);
+                opcion1.setText(opcion1.getText() + "\t" + getResources().getString(R.string.tick));
+                //opcion1.setBackgroundColor(Color.GREEN);
             } else {
                 resultadoNivel1 = 0;
             }

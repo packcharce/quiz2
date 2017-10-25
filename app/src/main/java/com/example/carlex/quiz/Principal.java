@@ -37,11 +37,16 @@ public class Principal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+
+        // Quitamos la barra con el nombre Quiz(ActionBar)
         ActionBar actionbar = getSupportActionBar();
         actionbar.hide();
 
+        // Aqui recogemos el parametro que pasamos del menu
         Bundle b = getIntent().getExtras();
-        short numNivel = b.getShort("NIVEL");
+
+        // NIVEL es el nombre del parametro recogido
+        int numNivel = b.getInt("NIVEL");
 
         switch (numNivel) {
             case 2:
@@ -70,6 +75,8 @@ public class Principal extends AppCompatActivity {
         rb3 = (RadioButton) findViewById(R.id.opcion3);
 
         rg = (RadioGroup) findViewById(R.id.respuestas);
+
+        // Seleccion de respuesta
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
