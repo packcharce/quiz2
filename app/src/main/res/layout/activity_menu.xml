@@ -62,6 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@color/radioBoton2"
             android:onClick="onClickBoton"
             android:text="@string/categoria1"
             tools:layout_editor_absoluteX="8dp"
@@ -71,7 +72,10 @@
             android:id="@+id/opcion2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:background="@color/radioBoton2"
             android:onClick="onClickBoton2"
             android:text="@string/categoria2" />
 
@@ -80,6 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@color/radioBoton2"
             android:onClick="onClickBoton3"
             android:text="@string/categoria3" />
 
@@ -94,6 +99,7 @@
         android:layout_marginRight="8dp"
         android:text="@string/copyright"
         android:textAlignment="textEnd"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />

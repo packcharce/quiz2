@@ -2,7 +2,6 @@ package com.example.carlex.quiz;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -121,7 +120,6 @@ public class Menu extends AppCompatActivity {
             if (resultCode == Activity.RESULT_OK) {
                 resultadoNivel1 = 1;
                 opcion1.setText(opcion1.getText() + "\t" + getResources().getString(R.string.tick));
-                //opcion1.setBackgroundColor(Color.GREEN);
             } else {
                 resultadoNivel1 = 0;
             }
@@ -129,7 +127,7 @@ public class Menu extends AppCompatActivity {
         if (requestCode == NIVEL2) {
             if (resultCode == Activity.RESULT_OK) {
                 resultadoNivel2 = 1;
-                opcion2.setBackgroundColor(Color.GREEN);
+                opcion2.setText(opcion2.getText() + "\t" + getResources().getString(R.string.tick));
             } else {
                 resultadoNivel2 = 0;
             }
@@ -137,7 +135,8 @@ public class Menu extends AppCompatActivity {
         if (requestCode == NIVEL3) {
             if (resultCode == Activity.RESULT_OK) {
                 resultadoNivel3 = 1;
-                opcion3.setBackgroundColor(Color.GREEN);
+                //TODO
+                opcion3.setText(opcion3.getText() + "\t" + getResources().getString(R.string.tick));
                 tv1.setText(getResources().getString(R.string.fin));
             } else {
                 resultadoNivel3 = 0;

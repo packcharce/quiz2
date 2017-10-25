@@ -7,8 +7,8 @@ android {
         applicationId "com.example.carlex.quiz"
         minSdkVersion 22
         targetSdkVersion 25
-        versionCode 1
-        versionName "2.2"
+        versionCode 2
+        versionName "2.22 beta 3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
