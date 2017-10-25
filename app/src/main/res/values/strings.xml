@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <!-- Preguntas -->
+    <string name="respuesta1">Respuesta 1</string>
+    <string name="respuesta2">Respuesta 2</string>
+    <string name="respuesta3">Respuesta 3</string>
+    <string name="descripcionImagen">Imagen a adivinar</string>
+
+    <!-- Menu -->
+    <string name="tituloMenu">Selecciona una categoria</string>
+    <string name="categoria1">Amateur</string>
+    <string name="categoria2">Pervertido</string>
+    <string name="categoria3">Manda cojones</string>
+    <string name="fin">CONGRATULATIONS FUCKING PERVERT!!!!</string>
+
+    <string name="nivelBloqueado">Aún no has desbloqueado este nivel</string>
+
+    <!-- Respuestas -->
+    <string-array name="respuestas1">
+        <item>Miley Cirus</item>
+        <item>Jennifer Lawrence</item>
+        <item>Rihanna</item>
+        <item>Sasha Grey</item>
+    </string-array>
+
+    <string-array name="respuestas2">
+        <item>Cameron Diaz</item>
+        <item>Beyonce</item>
+        <item>Katy Perry</item>
+        <item>Mckayla Maroney</item>
+    </string-array>
+
+    <string-array name="respuestas3">
+        <item>Ariana Grande</item>
+        <item>Kate Upton</item>
+        <item>Brooke Adams</item>
+        <item>Paris Hilton</item>
+    </string-array>
+</resources>
