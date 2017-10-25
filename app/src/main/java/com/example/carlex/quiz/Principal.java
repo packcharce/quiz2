@@ -20,7 +20,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-
 public class Principal extends AppCompatActivity {
 
     private final int tiempoFinal = 10000, intervalo = 100;
