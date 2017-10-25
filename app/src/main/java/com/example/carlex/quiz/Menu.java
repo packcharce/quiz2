@@ -3,10 +3,13 @@ package com.example.carlex.quiz;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Menu extends AppCompatActivity {
@@ -26,6 +29,49 @@ public class Menu extends AppCompatActivity {
         opcion2 = (Button) findViewById(R.id.opcion2);
         opcion3 = (Button) findViewById(R.id.opcion3);
         tv1 = (TextView) findViewById(R.id.textView);
+
+        // -----------------------------------------------------------------------------
+        final ImageButton ib = (ImageButton) findViewById(R.id.imageButton);
+        opcion1.setVisibility(View.GONE);
+        opcion2.setVisibility(View.GONE);
+        opcion3.setVisibility(View.GONE);
+        tv1.setVisibility(View.GONE);
+
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.videoplayback);
+        mp.start();
+
+        ib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp.stop();
+                ib.setVisibility(View.GONE);
+                opcion1.setVisibility(View.VISIBLE);
+                opcion2.setVisibility(View.VISIBLE);
+                opcion3.setVisibility(View.VISIBLE);
+                tv1.setVisibility(View.VISIBLE);
+            }
+        });
+
+        CountDownTimer ct = new CountDownTimer(4000, 1000) {
+            @Override
+            public void onTick(long l) {
+
+            }
+
+            @Override
+            public void onFinish() {
+                mp.stop();
+                ib.setVisibility(View.GONE);
+                opcion1.setVisibility(View.VISIBLE);
+                opcion2.setVisibility(View.VISIBLE);
+                opcion3.setVisibility(View.VISIBLE);
+                tv1.setVisibility(View.VISIBLE);
+            }
+        };
+        ct.start();
+
+        //------------------------------------------------------------------------------
+
     }
 
     @Override
