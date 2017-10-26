@@ -17,6 +17,8 @@
     <string name="nivelBloqueado">Aún no has desbloqueado este nivel\nConsigue perfect en el anterior</string>
 
     <string name="tick">&#10004;</string>
+    <string name="sfw">SFW</string>
+    <string name="nfsw">NSFW</string>
 
 
     <!-- Fin Partida -->

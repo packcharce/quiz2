@@ -21,4 +21,29 @@
         <item>@drawable/brookeadams</item>
         <item>@drawable/parishilton</item>
     </array>
+
+    <!-- Censuradas -->
+
+    <array name="imagenes4">
+
+        <item>@drawable/mileyciruscensura</item>
+        <item>@drawable/jenniferlawrencecensura</item>
+        <item>@drawable/rihanacensura</item>
+        <item>@drawable/sashagreycensura</item>
+    </array>
+
+    <array name="imagenes5">
+        <item>@drawable/kamerondiazcensura</item>
+        <item>@drawable/beyoncecensura</item>
+        <item>@drawable/katyperrycensura</item>
+        <item>@drawable/mckaylamaroneycensura</item>
+    </array>
+
+    <array name="imagenes6">
+        <item>@drawable/arianagrandecensura</item>
+        <item>@drawable/kateuptoncensura</item>
+        <item>@drawable/brookeadamscensura</item>
+        <item>@drawable/parishiltoncensura</item>
+    </array>
+
 </resources>

@@ -47,19 +47,35 @@ public class Principal extends AppCompatActivity {
 
         // NIVEL es el nombre del parametro recogido
         int numNivel = b.getInt("NIVEL");
+        int censura = b.getInt("censura");
 
         switch (numNivel) {
             case 2:
-                imgs = getResources().obtainTypedArray(R.array.imagenes2);
-                resps = getResources().obtainTypedArray(R.array.respuestas2);
+                if (censura == 1) {
+                    imgs = getResources().obtainTypedArray(R.array.imagenes2);
+                    resps = getResources().obtainTypedArray(R.array.respuestas2);
+                } else {
+                    imgs = getResources().obtainTypedArray(R.array.imagenes5);
+                    resps = getResources().obtainTypedArray(R.array.respuestas2);
+                }
                 break;
             case 3:
-                imgs = getResources().obtainTypedArray(R.array.imagenes3);
-                resps = getResources().obtainTypedArray(R.array.respuestas3);
+                if (censura == 1) {
+                    imgs = getResources().obtainTypedArray(R.array.imagenes3);
+                    resps = getResources().obtainTypedArray(R.array.respuestas3);
+                } else {
+                    imgs = getResources().obtainTypedArray(R.array.imagenes6);
+                    resps = getResources().obtainTypedArray(R.array.respuestas3);
+                }
                 break;
             default:
-                imgs = getResources().obtainTypedArray(R.array.imagenes1);
-                resps = getResources().obtainTypedArray(R.array.respuestas1);
+                if (censura == 1) {
+                    imgs = getResources().obtainTypedArray(R.array.imagenes1);
+                    resps = getResources().obtainTypedArray(R.array.respuestas1);
+                } else {
+                    imgs = getResources().obtainTypedArray(R.array.imagenes4);
+                    resps = getResources().obtainTypedArray(R.array.respuestas1);
+                }
                 break;
         }
 

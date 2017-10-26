@@ -9,14 +9,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Switch;
 import android.widget.TextView;
 
 public class Menu extends AppCompatActivity {
 
     public static int NIVEL1 = 1, NIVEL2 = 2, NIVEL3 = 3;
-    private int resultadoNivel1, resultadoNivel2, resultadoNivel3;
+    private int resultadoNivel1, resultadoNivel2, resultadoNivel3, censura = 0;
     private Button opcion1, opcion2, opcion3;
     private TextView tv1;
+    private Switch sw;
 
 
     @Override
@@ -28,6 +30,22 @@ public class Menu extends AppCompatActivity {
         opcion2 = (Button) findViewById(R.id.opcion2);
         opcion3 = (Button) findViewById(R.id.opcion3);
         tv1 = (TextView) findViewById(R.id.textView);
+        sw = (Switch) findViewById(R.id.switchNSFW);
+        sw.setVisibility(View.GONE);
+
+        //------------------------------------------------------------------------------
+        sw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (sw.isChecked()) {
+                    censura = 1;
+                } else {
+                    censura = 0;
+                }
+            }
+        });
+
+        //------------------------------------------------------------------------------
 
         // -----------------------------------------------------------------------------
         final ImageButton ib = (ImageButton) findViewById(R.id.imageButton);
@@ -48,6 +66,7 @@ public class Menu extends AppCompatActivity {
                 opcion2.setVisibility(View.VISIBLE);
                 opcion3.setVisibility(View.VISIBLE);
                 tv1.setVisibility(View.VISIBLE);
+                sw.setVisibility(View.VISIBLE);
             }
         });
 
@@ -65,6 +84,7 @@ public class Menu extends AppCompatActivity {
                 opcion2.setVisibility(View.VISIBLE);
                 opcion3.setVisibility(View.VISIBLE);
                 tv1.setVisibility(View.VISIBLE);
+                sw.setVisibility(View.VISIBLE);
             }
         };
         ct.start();
@@ -85,6 +105,7 @@ public class Menu extends AppCompatActivity {
     public void onClickBoton(View v) {
         Intent intent = new Intent(this, Principal.class);
         intent.putExtra("NIVEL", 1);
+        intent.putExtra("censura", censura);
         startActivityForResult(intent, NIVEL1);
     }
 
@@ -92,6 +113,7 @@ public class Menu extends AppCompatActivity {
         if (resultadoNivel1 == 1) {
             Intent intent = new Intent(this, Principal.class);
             intent.putExtra("NIVEL", 2);
+            intent.putExtra("censura", censura);
             startActivityForResult(intent, NIVEL2);
         } else {
             tv1.setTextSize(20);
@@ -103,6 +125,7 @@ public class Menu extends AppCompatActivity {
         if (resultadoNivel2 == 1) {
             Intent intent = new Intent(this, Principal.class);
             intent.putExtra("NIVEL", 3);
+            intent.putExtra("censura", censura);
             startActivityForResult(intent, NIVEL3);
         } else {
             tv1.setTextSize(20);
